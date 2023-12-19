@@ -66,7 +66,7 @@ The right section seems to have the same issue
 **HTML**
 
 
-![Head](assets/screenshots/meta_aft.png "Head") 
+![Head](assets/screenshots/meta_after.png "Head") 
 
 The head section had been updated with title and neccesary meta tags for both accessibility and seo purposes.
 
