@@ -1,121 +1,148 @@
-# 01 HTML CSS Git: Code Refactor
+# Horiseon Refactor Challenge
 
-## Your Task
+## Description 
 
-**Note**: Be sure to review the [Challenge Guide](./Challenge-Guide.md) and the [Good README Guide](./Good-README-Guide.md) before you start working on this assignment!
+This project is the first challenge of many in the 2023 edX Front-End Development Bootcamp.
+It is a refactor project, where the main goal is rework the source code (HTML/CSS) in a one page website of a fictional Marketing Agency called Horiseon.
 
-This week your challenge is an on-the-job ticket, which means you'll begin with starter code that you need to modify. This week's challenge involves a very important aspect of web development: **accessibility**. 
-
-One of the most common tasks for front-end and junior developers is to take existing code and refactor it (recall that to refactor code is to improve it without changing what it does) to meet a certain set of standards or implement a new technology. In this challenge, a marketing agency has hired you to refactor an existing site to make it more accessible. 
-
-Web accessibility is an increasingly important consideration for businesses. It ensures that people with disabilities can access a website using assistive technologies such as video captions, screen readers, and braille keyboards. Making a website accessible is also good for business for many reasons, one of them being that accessible sites are better positioned in search engines like Google. It also helps companies avoid litigation that can occur when people with disabilities cannot access their website.
-
-Even though accessibility is a broad topic that can include complex requirements, your tech lead has given you a small list of specific criteria to satisfy the project. These criteria are documented below in the Acceptance Criteria.
-
-**Important**: An important rule to follow when working with someone else's code is the **Scout Rule**, which recommends that you always leave the code a little cleaner than when you found it.
-
+**A snippet from the challenge description:**
+"Web accessibility is an increasingly important consideration for businesses. It ensures that people with disabilities can access a website using assistive technologies such as video captions, screen readers, and braille keyboards. Making a website accessible is also good for business for many reasons, one of them being that accessible sites are better positioned in search engines like Google. It also helps companies avoid litigation that can occur when people with disabilities cannot access their website.
+Even though accessibility is a broad topic that can include complex requirements, your tech lead has given you a small list of specific criteria to satisfy the project. These criteria are documented below in the Acceptance Criteria. 
 To impress clients, you should always go the extra mile and improve the codebase for long-term sustainability. For example, make sure that all links are functioning correctly. Also, rework the CSS to make it more efficient by consolidating CSS selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
 
-Are you ready to jump in? Here are this week's challenge requirements:
-
-### User Story
-
-```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
-```
-
-### Acceptance Criteria
-
-Your website must meet accessibility standards. You can achieve this completing the following:
-
-* Semantic HTML elements can be found throughout the source code
-* HTML elements follow a logical structure independent of styling and positioning
-* Image and icon elements contain accessible `alt` attributes
-* Heading attributes fall in sequential order
-* Title elements contain a concise, descriptive title
-
-### Resources:
-
-* [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
-* [Image `alt` attributes](https://www.w3schools.com/tags/att_img_alt.asp)
-
-### Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](Assets/01-html-css-git-challenge-demo.png)
-
-> **Note**: This layout is designed for desktop viewing, so you may notice that some of the elements don't look like the mock-up at a resolution smaller than 768px. Eventually you'll learn how to make elements responsive so that your web application is optimized for any screen size.
-
-### Getting Started
-
-Follow these instructions to create your project and deploy it to GitHub Pages:
-
-1. Create a new repository on your GitHub account and clone it to your computer.
-
-2. When you're ready to deploy, use the `git add`, `git commit`, and `git push` commands to save and push your code to your GitHub repository.
-
-3. Navigate to your GitHub repository in the browser and then select the Settings tab on the right side of the page.
-
-4. On the Settings page, scroll down to the GitHub Pages section. Then, in the section labeled Source, select the `main` branch as your source.
-
-5. Navigate to <your-github-username.github.io/your-repository-name> and you will find that your new webpage has gone live! For example, if your GitHub username is "lernantino" and the project is "css-demo-site", then your URL would be <lernantino.github.io/css-demo-site>.
-
-You can also refer to this [YouTube video on enabling GitHub Pages](https://youtu.be/P4Mu1t5rIXg) for more guidance.
-
-> **Important**: It might take a few minutes for GitHub pages to display your site correctly. If your project does not deploy or display correctly, check that all file paths in your application are relative and use the right casing. GitHub is case-sensitive, an inccorect capital or lowercase letter could cause problems in deployment.
-
-Be sure to add, commit, and push your work to see the most up-to-date version of your app!
-
-### Requirements
-
-This challenge is assessed on the following criteria: 
-
-#### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following code improvements:
-
-  * Application's links all function correctly.
-
-  * Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
-
-  * Application's CSS file is properly commented.
-
-#### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-#### Application Quality: 15%
-
-* Application resembles (at least 90%) screenshots provided in the challenge instructions.
-
-#### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+An **important** rule was to follow when working with someone else's code is the **Scout Rule**, which recommends that you always leave the code a little cleaner than when you found it".
 
 ---
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+## Installation
+
+
+The work environment has been Visual Studio Code for this project, with the help of Firefox Developer Edition's built-in faetures for examining the live page.
+
+
+## Original state and findings
+
+**HTML**
+
+The original source code was very loosely written, such as the webpage had no proper title, meta tags had been missing,
+and the sections in different elements of the page has been stated as 'div's. Here is below some examples:
+
+
+![Head](assets/screenshots/head.png "Head") 
+
+The head is missing a proper website title, meta tag such as title, keywords, description, canonical and so on.
+
+
+![Nav](assets/screenshots/nav.png "Nav")
+
+Navigation 
+
+
+![Content](assets/screenshots/main_content.png "Content")
+
+The main content seem overcomplicated, and has a lot of white space.
+
+
+![Right](assets/screenshots/right_section.png "Right")
+
+Right section suffers from the same issue as the main
+
+
+**CSS**
+
+
+![Main](assets/screenshots/social_css.png "Main")
+
+These elements has the same values, therefore unnecesary to duplicate
+
+
+![Right](assets/screenshots/benefit_css.png "Right")
+
+The right section seems to have the same issue
+
+
+## Solved Issues
+
+**HTML**
+
+
+![Head](assets/screenshots/meta_aft.png "Head") 
+
+The head section had been updated with title and neccesary meta tags for both accessibility and seo purposes.
+
+
+![Nav](assets/screenshots/nav_aft.png "Nav") 
+
+Navigation
+
+
+![Main](assets/screenshots/main_aft.png "Main") 
+
+Main content section rework, elements now fall under the same class and attributes had been changed for accessiability.
+
+
+![Aside](assets/screenshots/right_aft.png "Aside") 
+
+The same with 'aside' section
+
+
+![Aside](assets/screenshots/footer_aft.png "Aside") 
+
+Morevover, 
+For a more professional look, 'Made with love' part had been erased from footer.
+
+
+
+**CSS**
+
+![Head](assets/screenshots/header_aft.png "Head")
+
+Header and navigation prooperly named.
+
+
+![css](assets/screenshots/css_rework.png "css")
+
+As elements had been polished and became part of the same classes, a more streamlined css file was the result.
+
+
+![seo](assets/screenshots/add_logo_aft.png "seo")
+
+The "logo" had a part which emphasizes the main mission of the company. There is no control in the original css file.
+It is worth to emphasize it, as it helps with UX.
+
+
+
+
+
+**Site shot**
+
+![Site](assets/screenshots/site_new.png "Site")
+
+
+
+
+## License
+
+The project served under the MIT License.
+The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT) in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.
+
+
+
+---
+
+## Badges
+
+Built with:
+
+![Static Badge](https://img.shields.io/badge/63%25-63%25?label=html)
+![Static Badge](https://img.shields.io/badge/37%25-37%25?label=css)
+
+
+
+## Features
+
+The actual version (1.0) released as an MVP product, which hence covers challenges requirements, the code will go through extensive rework from time to time, to add out-of-scope features, such as responsivity.
+
+
+---
+(c) 2023 oIdiOn. All rights thrown out of the window.
